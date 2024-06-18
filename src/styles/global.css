@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "PlusJakartaSans";
+  src: url("/fonts/PlusJakartaSans/PlusJakartaSans.woff2") format("woff2"),
+    url("/fonts/PlusJakartaSans/PlusJakartaSans.woff") format("woff"),
+    url("/fonts/PlusJakartaSans/PlusJakartaSans.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PlusJakartaSans-Italic";
+  src: url("/fonts/PlusJakartaSans/PlusJakartaSans-Italic.woff2") format("woff2"),
+    url("/fonts/PlusJakartaSans/PlusJakartaSans-Italic.woff") format("woff"),
+    url("/fonts/PlusJakartaSans/PlusJakartaSans-Italic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sen";
+  src: url("/fonts/Sen/Sen.woff2") format("woff2"), url("/fonts/Sen/Sen.woff") format("woff"),
+    url("/fonts/Sen/Sen.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
