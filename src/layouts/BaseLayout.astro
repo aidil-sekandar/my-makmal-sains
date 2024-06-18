@@ -1,5 +1,10 @@
 ---
+import Header from "@/components/ui/Header.astro";
+import Footer from "@/components/ui/Footer.astro";
+import BuiltByAidil from "@/components/ui/BuiltByAidil.astro";
 import "@/styles/global.css";
+
+const { pageTitle } = Astro.props;
 ---
 
 <html lang="en">
@@ -8,9 +13,12 @@ import "@/styles/global.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>My Makmal Sains</title>
+    <title>{pageTitle} | MY Makmal Sains</title>
   </head>
-  <body class="bg-bodyColor font-PlusJakartaSans">
-    <h1>My Makmal Sains</h1>
+  <body class="bg-bodyColor font-PlusJakartaSans text-textPrimary">
+    <Header />
+    <slot />
+    <BuiltByAidil />
+    <Footer />
   </body>
 </html>

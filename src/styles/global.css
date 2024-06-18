@@ -28,3 +28,58 @@
   font-display: swap;
   font-style: normal;
 }
+
+body {
+  cursor: url("/assets/cursors/normal.png"), auto;
+}
+
+a:hover,
+button:hover {
+  cursor: url("/assets/cursors/pointer.png"), auto;
+}
+
+input,
+textarea {
+  cursor: url("/assets/cursors/text.png"), text;
+}
+
+::selection {
+  @apply bg-[#c1befa8f];
+}
+
+.main-layout {
+  @apply max-w-[60rem] mx-auto px-6;
+}
+
+.btn {
+  @apply flex py-2 px-5 rounded-lg font-semibold shadow-lg transition duration-100 border-2 border-textPrimary hover:-translate-y-1;
+}
+
+.btn-main {
+  @apply bg-purplePastel;
+}
+
+.btn-second {
+  @apply bg-yellowPastel;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  border-bottom: 3px solid rgba(174, 174, 174, 0.18);
+  z-index: 100;
+}
+
+footer {
+  width: 100%;
+  border-top: 3px solid rgba(174, 174, 174, 0.18);
+}
+
+.hamburger {
+  background: #fafafa;
+  border: 3px solid rgba(128, 128, 128, 0.18);
+}
+
+.hamburger > li:hover {
+  @apply bg-gray-200 md:rounded-lg;
+}
